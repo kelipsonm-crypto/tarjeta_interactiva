@@ -1,5 +1,5 @@
 /**
- * Invitación Interactiva - Liam Alexander
+ * Invitación Interactiva - Revelación de Sexo
  * Lógica del Reproductor de Música y Extracción de Fondo en Tiempo Real para Videos
  */
 
@@ -201,11 +201,13 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!cfg || !cfg.evento) return;
     const ev = cfg.evento;
 
-    // 1. Título y Nombres del Bebé (Línea 1 y Línea 2)
-    const name1 = ev.nombre_linea_1 || (ev.nombre_bebe ? ev.nombre_bebe.trim().split(' ')[0] : 'Liam');
-    const name2 = ev.nombre_linea_2 || (ev.nombre_bebe ? ev.nombre_bebe.trim().split(' ').slice(1).join(' ') : 'Alexander');
+    // 1. Título de Pestaña y Encabezado de Revelación
+    const tituloPestana = ev.titulo_pestana || "Invitación Especial | Revelación de Sexo";
+    document.title = tituloPestana;
+
+    const name1 = ev.nombre_linea_1 || '¿Niño';
+    const name2 = ev.nombre_linea_2 || 'o Niña?';
     
-    document.title = `Invitación Especial | ${name1} ${name2}`.trim();
     const nameFirstEl = document.getElementById('nameFirst');
     const nameSecondEl = document.getElementById('nameSecond');
     if (nameFirstEl) nameFirstEl.textContent = name1;

@@ -111,8 +111,8 @@ document.addEventListener('DOMContentLoaded', () => {
         takeoverEl.style.width = `${rect.width}px`;
         takeoverEl.style.height = `${rect.height}px`;
         takeoverEl.style.borderRadius = '12px';
-        takeoverEl.style.backgroundColor = '#FFFDF9';
-        takeoverEl.style.boxShadow = '0 24px 50px rgba(35, 25, 15, 0.28)';
+        takeoverEl.style.backgroundColor = '#FDFBF7';
+        takeoverEl.style.boxShadow = '0 24px 50px rgba(107, 66, 38, 0.28)';
         takeoverEl.style.zIndex = '99999';
 
         // 3. Ocultar la carta original dentro del sobre
